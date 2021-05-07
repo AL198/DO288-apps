@@ -8,4 +8,3 @@ COPY Server.js /day6/Server.js
 RUN npm install express
 
 CMD [ "node", "Server.js" ]
-EXPOSE 3000

@@ -7,6 +7,7 @@ COPY server.js /day7/server.js
 
 RUN npm install express
 
+WORKDIR /usr/local/src
 COPY ./src .
 
 CMD [ "node", "server.js" ]

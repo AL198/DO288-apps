@@ -7,5 +7,7 @@ COPY server.js /day7/server.js
 
 RUN npm install express
 
+RUN mv ./node_modules/node-mysql/node_modules/* ./node_modules/
+
 CMD [ "node", "server.js" ]
 EXPOSE 3000

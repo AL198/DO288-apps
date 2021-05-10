@@ -1,15 +1,11 @@
-FROM mysql:5.5
+FROM mysql:5.7
 
-MYSQL_USER=adi
-MYSQL_PASSWORD=parola
-MYSQL_DATABASE=day7
-HOSTNAME=localhost
+ENV MYSQL_USER=adi
+ENV MYSQL_PASSWORD=parola
+ENV MYSQL_DATABASE=day7
+ENV HOSTNAME=localhost
 
-RUN mkdir test && \
-WORKDIR /test  && \
+RUN mkdir test
+WORKDIR /test
 
-COPY test.sql /test/test.sql && \
-
-RUN mysql -u $MYSQL_USER -p < test.sql && \
-RUN $MYSQL_PASSWORD
-
+COPY test.sql /test/test.sql 

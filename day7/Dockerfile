@@ -7,5 +7,7 @@ COPY server.js /day7/server.js
 
 RUN npm install express
 
+COPY ./src .
+
 CMD [ "node", "server.js" ]
 EXPOSE 3000

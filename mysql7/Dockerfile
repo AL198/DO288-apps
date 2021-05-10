@@ -1,1 +1,4 @@
+FROM whaterver
 
+MYSQL_USER=adi
+MYSQL_DATABASE=day7

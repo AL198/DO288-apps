@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:12.18.1
 
 RUN mkdir day7
 WORKDIR /day7
